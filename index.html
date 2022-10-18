@@ -1,0 +1,71 @@
+ 
+<html>
+  <head>
+    <title>Identificador de Imagens</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <h1 class="btn btn-default heading">INDENTIFICADOR DE OBJETOS</h1>
+      <br><br>
+
+      <p style="font-size: 22px;">O modelo foi treinado para indentificar estes objetos: </p>
+
+      <h3>Livro</h3>
+      <hr>
+      <h3>Telefone</h3>
+      <hr>
+      <h3>Carregador</h3>
+      <hr>
+      <h3>Caneta</h3>
+      <hr>
+      <h3>Copo</h3>
+      <hr>
+
+      <label>Visualização da webcam - </label>
+
+      <br><br>
+        <div id = "camera">
+
+        </div>
+
+      <br><br>
+
+        <div id = "CapturaDeTela">
+
+        </div>
+
+      <br><br>
+        <button class="btn btn-info" onclick="captura()">Captura de tela</button>
+
+      <br><br>
+
+        <button class="btn btn-success" onclick="identificador()">Indentificar objeto</button>
+        <br><br>
+        
+            <h2 style="font-size: 30px ;">Nome do objeto: <span id = "resultObjectName"></span> </span></h2>
+        
+       
+        <h2 style="font-size: 30ppx;">Precisão: <span id = "resultObjectAccuracy"></span></h2>
+        
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
